@@ -1,9 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>동적 박스 예시</title>
+        <link
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+        <!-- 스타일시트 링크 -->
+        <link rel="stylesheet" href="./assets/index-page/index.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- 1번 박스 (Swiper 기능) -->
+        <div class="box swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <p>Unsplash studio</p>
+                        <p>World-class imagert for your brand</p>
+                        <p>at a fraction of the price</p>
+                    </div>
+                    <img src="./assets/img/slide-main-1.png" alt="이미지 1" />
+                </div>
+                <div class="swiper-slide">
+                    <div class="text">
+                        <p>at a fraction of the price</p>
+                        <p>World-class imagert for your brand</p>
+                        <p>Unsplash studio</p>
+                    </div>
+                    <img src="./assets/img/slide-main-2.png" alt="이미지 2" />
+                </div>
+            </div>
+            <!-- Swiper 내비게이션 (좌/우 화살표) -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- 2번 박스 (항목) -->
+        <div class="box box-2">
+            <ul id="box2-list">
+                <!-- 슬라이드에 맞는 항목이 동적으로 여기에 추가됨 -->
+            </ul>
+        </div>
+
+        <!-- 그리드 이미지 (항목을 클릭하면 내용만 바뀌는 고정된 그리드) -->
+        <div class="grid-images" id="productGrid">
+            <!-- 상품 목록이 여기에 동적으로 추가됨 -->
+        </div>
+
+        <!-- Swiper JS 및 Custom JS 파일 -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/index-page/index.js"></script>
+    </body>
 </html>

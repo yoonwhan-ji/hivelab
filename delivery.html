@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>배송 정보</title>
+        <link rel="stylesheet" href="./assets/delivery-page/delivery.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>배송 상태</h1>
+                <a href="index.html">
+                    <img
+                        src="./assets/img/d-2.png"
+                        alt="배경 이미지"
+                        style="max-width: 120px"
+                    />
+                </a>
+            </div>
+
+            <div class="info-text">
+                오늘 11-17(수) 출발 예정
+                <span class="info-icon" id="info-icon">!</span>
+            </div>
+
+            <div class="info-box">
+                <p>11-19(화)까지 도착 확률 86%</p>
+                <span class="toggle-btn" id="toggle-btn">열기</span>
+                <div class="toggle-box" id="toggle-box">
+                    <p>도착 예정보다 빨리 도착할 수 있습니다!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-popup" id="info-popup">
+            <h3>배송안내</h3>
+            <textarea
+                id="info-text"
+                placeholder="1.출발일과 도착일은&#13;&#10;  판매자, 택배사, 기상상황 등에 따라&#13;&#10;  달라질 수 있습니다.&#13;&#10;&#13;&#10;2.판매자 사정 또는 &#13;&#10;  여러 상품을 함께 주문한 경우 &#13;&#10;  출발 예정일이나 배송사가 변동될 수 있습니다."
+            ></textarea>
+        </div>
+
+        <script src="./assets/delivery-page/delivery.js"></script>
+    </body>
+</html>
